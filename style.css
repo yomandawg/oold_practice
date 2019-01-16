@@ -1,0 +1,23 @@
+h1 {
+    background-color: greenyellow;
+    /* margin-left: 100px; */
+}
+
+h2 {
+    background-color: goldenrod;
+    color: teal;
+    font-size: 2em;
+}
+
+p {
+    font-size: 1em;
+    background-color: greenyellow;
+}
+
+#salmon {
+    background-color: darksalmon;
+}
+
+.grey-font {
+    color:grey;
+}
