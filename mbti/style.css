@@ -1,0 +1,72 @@
+/* resetting css */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* give to both <seciton> and <ul> */
+section , ul {
+    margin: 10px 0;
+}
+
+/* <li> inside <ul> inside <section> */
+section > ul > li {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* the <ul> right after <a> */
+a + ul {
+    background-color: gold;
+}
+
+/* all <ul>'s after <a> */
+a ~ ul {
+    border: 1px solid darkgrey;
+}
+
+/* give properties to only the ones with [] */
+a[target="_self"] {
+    border: 1px solid darkgray;
+    border-radius: 5px;
+    background-color: white;
+    padding: 5px;
+}
+
+/* class property */
+.me {
+    background-color: black;
+    color: white;
+}
+
+/* (pipe)|= give properties to those with "TYPE" or starting with "-TYPE-" */
+img[alt|="TYPE"] {
+    box-shadow: -1px -1px 3px black;
+}
+
+/* (carrot)^= give properties to those starting with "_b" */
+a[target^="_b"] {
+    background-color: blue;
+    padding: 10px;
+    margin: 30px;
+    color: white;
+    /* don't want to change the 'inline' display but want to use the 'block' display property */
+    display: inline-block;
+}
+
+/* (dollar)$= give properties to those ending with "istj" */
+a[href$="istj"] {
+    background-color: green;
+    color: white;
+}
+
+/* (star)*= give properties to all <ul>'s with "-type-" */
+ul[class*="type"] {
+    text-align: center;
+    padding: 35px 0;
+}
+
+/* ~= give properties to all <ul>'s with "type" */ 
+ul[class~="type"] {
+    border: 1px dashed purple;
+}
