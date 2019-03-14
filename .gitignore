@@ -9,3 +9,6 @@ first_local/__pycache__/
 
 # DB
 *.sqlite3
+
+#Media
+first_local/media/
