@@ -26,4 +26,4 @@ urlpatterns = [
 ]
 
 # Dev 에서는 꼭 써야 함. (DEBUG=True)
-urlpatterns += static(settings.MEDIA_URL, documnet_root=settings.MEDIA_URL)
+urlpatterns += static(settings.MEDIA_URL, documnet_root=settings.MEDIA_ROOT)
