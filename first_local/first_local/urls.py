@@ -20,10 +20,10 @@ from django.conf.urls.static import static
 from django.conf import settings
 
 urlpatterns = [
-
     path('admin/', admin.site.urls),
     path('board/', include('board.urls')),
+    path('sns/', include('sns.urls')),
 ]
 
 # Dev 에서는 꼭 써야 함. (DEBUG=True)
-urlpatterns += static(settings.MEDIA_URL, documnet_root=settings.MEDIA_ROOT)
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
